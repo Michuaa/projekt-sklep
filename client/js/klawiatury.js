@@ -5,17 +5,17 @@ const czwarty = document.querySelector('#czwarty')
 const piąty = document.querySelector('#piąty')
 const szósty = document.querySelector('#szósty')
     pierwszy.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=1'
+        document.location.href = 'produkt.html?id=21'
     })
     drugi.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=2'
+        document.location.href = 'produkt.html?id=22'
     })
     trzeci.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=3'
+        document.location.href = 'produkt.html?id=23'
     })
     czwarty.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=4'
+        document.location.href = 'produkt.html?id=124'
     })
     piąty.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=5'
+        document.location.href = 'produkt.html?id=25'
     })

@@ -21,7 +21,7 @@ Getdata().then((data) => {
     v1.textContent = produkt.nazwa;
     cena.textContent = produkt.cena + " PLN";
 
-
+      img.src = produkt.zdjecie
     if (produkt.pamiec !== null && produkt.uklad !== null) {
       v2.textContent = produkt.pamiec;
       v3.textContent = produkt.uklad;

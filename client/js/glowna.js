@@ -8,14 +8,14 @@ const szósty = document.querySelector('#szósty')
         document.location.href = 'produkt.html?id=1'
     })
     drugi.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=2'
+        document.location.href = 'produkt.html?id=21'
     })
     trzeci.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=3'
+        document.location.href = 'produkt.html?id=11'
     })
     czwarty.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=4'
+        document.location.href = 'produkt.html?id=6'
     })
     piąty.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=5'
+        document.location.href = 'produkt.html?id=16'
     })
