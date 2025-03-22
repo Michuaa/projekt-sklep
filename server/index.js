@@ -34,5 +34,8 @@ app.get('/produkt/:id', (req,res) =>{
     })
 })
 app.listen(3000, ()=>{
-    console.log('OKIDOKI')
+    console.log('Działa')
+})
+app.get('/koszyk', (req,res) =>{
+    const sql2= `SELECT * FROM koszyk`
 })

@@ -14,7 +14,7 @@ const szósty = document.querySelector('#szósty')
         document.location.href = 'produkt.html?id=23'
     })
     czwarty.addEventListener('click', ()=>   {
-        document.location.href = 'produkt.html?id=124'
+        document.location.href = 'produkt.html?id=24'
     })
     piąty.addEventListener('click', ()=>   {
         document.location.href = 'produkt.html?id=25'
