@@ -43,6 +43,13 @@ Getdata().then((data) => {
     }
 
 
-    img.src = produkt.zdjecie ? produkt.zdjecie : "default.jpg";
+    document.querySelector('#button').addEventListener('click', async () => {
+      const nazwa = produkt.nazwa
+      const cena = produkt.cena
+          const req = await fetch(`http://localhost:3000/dodaj/${nazwa}/${cena}`)
+    })
+
+
+
   });
 });
