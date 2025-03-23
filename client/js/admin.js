@@ -8,11 +8,6 @@ async function deleteData(id) {
         method: 'DELETE'
     });
     const data = await resp.text(); 
-    if (resp.ok) {
-        console.log(data); 
-    } else {
-        console.log("Error:", data); 
-    }
 }
 
 getdata().then(data => {

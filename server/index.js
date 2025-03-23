@@ -90,19 +90,6 @@ app.get('/zamowienia', (req, res) => {
         }
     })
 })
-// app.get('/dzamowienia/:id', (req, res) => {
-//     const id = req.params.id;
-//     const sql = "DELETE FROM zamowienia WHERE Id_zamowienia = ?";
-//     conn.query(sql, [id], (err) => {
-//         if (err) {
-//             console.log(err);
-//             res.send("Nie udało się usunąć zamówienia");
-//         } else {
-//             res.send("Zamówienie usunięte pomyślnie");
-//             console.log("Usunięto zamówienie o id:", id);
-//         }
-//     });
-// })
 app.delete('/zamowienia/:id', (req, res) => {
     const id = req.params.id;
     const sql = "DELETE FROM zamowienia WHERE Id_zamowienia = ?";
@@ -110,17 +97,10 @@ app.delete('/zamowienia/:id', (req, res) => {
     conn.query(sql, [id], (err, result) => {
         if (err) {
             console.log(err);
-            res.status(500).send("Nie udało się usunąć zamówienia");
         } else {
             if (result.affectedRows > 0) {
-                res.status(200).send("Zamówienie usunięte pomyślnie");
                 console.log("Usunięto zamówienie o id:", id);
-            } else {
-                res.status(404).send("Zamówienie o podanym id nie zostało znalezione");
-            }
-        }
-    });
-});
+            }}})})
 
 app.listen(3000, ()=>{
     console.log('Działa')
